@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidades</title>
+</head>
+<body>
+    <h1>Sistema de Nacionalidades</h1>
+    País onde você nasceu: <input type="text" id="txtvel">
+    <input type="button" value="Verificar" onclick= test()>
+   
+    
+    <div id="nome">
+    <script>
+        
+        function test() {
+            var txtv = window.document.querySelector('input#txtvel')
+            var nome = window.document.querySelector('div#nome')
+            var vel = String(txtv.value)
+            nome.innerHTML = `<p>Você mora: <strong>${vel}!</strong></p>`
+            
+            if (vel === 'Brasil' && 'brasil') {
+            nome.innerHTML += `<p>Você é Brasileiro!</p>`
+            }
+            if (vel != 'brasil') {
+            nome.innerHTML += `<p>Você é Estrangeiro!</p>`
+            }
+        }
+
+        
+    </script>
+</body>
+</html>
